@@ -7,7 +7,7 @@ import { getBookings } from "./data-service";
 import { redirect } from "next/navigation";
 
 export async function signInAction() {
-  await signIn("google", { redirectTo: "http://localhost:3000/account" });
+  await signIn("google", { redirectTo: "/account" });
 }
 
 export async function signOutAction() {
