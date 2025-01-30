@@ -7,7 +7,9 @@ import { getBookings } from "./data-service";
 import { redirect } from "next/navigation";
 
 export async function signInAction() {
-  await signIn("google", { redirectTo: "/account" });
+  await signIn("google", {
+    redirectTo: "https://wild-osais-client.vercel.app/account",
+  });
 }
 
 export async function signOutAction() {
